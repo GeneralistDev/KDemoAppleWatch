@@ -14,9 +14,9 @@ class InterfaceController: WKInterfaceController {
     
     @IBOutlet var helloLabel: WKInterfaceLabel!
     
-    @IBOutlet var earthImage: WKInterfaceImage!
-    
     @IBOutlet var pressButton: WKInterfaceButton!
+    
+    @IBOutlet var earthButton: WKInterfaceButton!
     
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
@@ -37,6 +37,12 @@ class InterfaceController: WKInterfaceController {
     @IBAction func pressButtonClicked() {
         pressButton.setHidden(true)
         helloLabel.setHidden(true)
-        earthImage.setHidden(false)
+        earthButton.setHidden(false)
+    }
+    
+    @IBAction func earthButtonClicked() {
+        earthButton.setHidden(true)
+        pressButton.setHidden(false)
+        helloLabel.setHidden(false)
     }
 }

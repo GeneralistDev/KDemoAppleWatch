@@ -13,7 +13,11 @@
                         <label alignment="center" text="Hello World" id="K6F-gG-EaI">
                             <fontDescription key="font" type="system" weight="semibold" pointSize="22"/>
                         </label>
-                        <imageView alignment="left" hidden="YES" image="Earth_Western_Hemisphere_transparent_background.png" id="Ctz-nF-dBQ"/>
+                        <button width="1" alignment="left" hidden="YES" backgroundImage="Earth_Western_Hemisphere_transparent_background.png" id="ExY-cx-oes">
+                            <connections>
+                                <action selector="earthButtonClicked" destination="AgC-eL-Hgc" id="G9H-T7-bib"/>
+                            </connections>
+                        </button>
                         <button width="1" alignment="center" verticalAlignment="bottom" title="Press" id="f0G-zd-yaf">
                             <connections>
                                 <action selector="pressButtonClicked" destination="AgC-eL-Hgc" id="8EF-bC-ykl"/>
@@ -21,7 +25,7 @@
                         </button>
                     </items>
                     <connections>
-                        <outlet property="earthImage" destination="Ctz-nF-dBQ" id="pAC-3j-hQf"/>
+                        <outlet property="earthButton" destination="ExY-cx-oes" id="feu-GU-DQr"/>
                         <outlet property="helloLabel" destination="K6F-gG-EaI" id="uBp-ym-Syt"/>
                         <outlet property="pressButton" destination="f0G-zd-yaf" id="KNg-iw-lay"/>
                     </connections>
