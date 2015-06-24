@@ -28,10 +28,24 @@
                         <outlet property="earthButton" destination="ExY-cx-oes" id="feu-GU-DQr"/>
                         <outlet property="helloLabel" destination="K6F-gG-EaI" id="uBp-ym-Syt"/>
                         <outlet property="pressButton" destination="f0G-zd-yaf" id="KNg-iw-lay"/>
+                        <segue destination="4Xz-HO-Ywp" kind="relationship" relationship="nextPage" id="zKe-lM-ieY"/>
                     </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="220" y="345"/>
+        </scene>
+        <!--About-->
+        <scene sceneID="HGy-Ih-Pgb">
+            <objects>
+                <controller identifier="AboutInterface" title="About" hidesWhenLoading="NO" id="4Xz-HO-Ywp">
+                    <items>
+                        <label alignment="center" verticalAlignment="center" text="This is just some about text so that I could test how to have multiple pages in the app" textAlignment="center" numberOfLines="6" id="Qd1-tG-Hzg">
+                            <fontDescription key="font" type="system" pointSize="16"/>
+                        </label>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="468" y="345"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">
